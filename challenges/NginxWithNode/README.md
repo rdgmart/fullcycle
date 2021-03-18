@@ -1,1 +1,1 @@
-# docker push rdgmartins/nginxwithnode:latest
+# docker-compose up -d --build
