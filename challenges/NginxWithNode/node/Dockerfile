@@ -2,7 +2,9 @@ FROM node:15
 
 WORKDIR /usr/src/app
 
-RUN apt-get update && apt-get install -y wget
+RUN apt-get update && apt-get install -y wget && npm install
+
+COPY index.js .
 
 # https://github.com/jwilder/dockerize
 ENV DOCKERIZE_VERSION v0.6.1
